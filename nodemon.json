@@ -1,0 +1,9 @@
+{
+  "watch": ["src"],
+  "ext": "ts",
+  "exec": "npx ts-node --files src/index.ts",
+  "events": {
+    "restart": "kill-port 8080",
+    "crash": "kill-port 8080"
+  }
+}
